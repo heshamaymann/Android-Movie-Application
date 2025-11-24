@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/registerFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.movieapp.features.fragment.splash.SplashFragment"
+        tools:layout="@layout/splash_fragment" />
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.movieapp.features.fragment.characters.CharactersFragment"
+        android:label="CharactersFragment" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.movieapp.detail.DetailsFragment"
+        android:label="DetailsFragment" >
+        <argument
+            android:name="characterID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.movieapp.RegisterFragment"
+        android:label="RegisterFragment" />
+    <fragment
+        android:id="@+id/sportFragment"
+        android:name="com.example.movieapp.features.fragment.bar_fragments.SportFragment"
+        android:label="SportFragment" />
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.example.movieapp.features.fragment.bar_fragments.NewFragment"
+        android:label="NewFragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.movieapp.features.fragment.bar_fragments.SettingFragment"
+        android:label="SettingFragment" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.movieapp.features.fragment.location.LocationFragment"
+        android:label="LocationFragment" >
+        <argument
+            android:name="charID"
+            app:argType="integer" />
+    </fragment>
+</navigation>

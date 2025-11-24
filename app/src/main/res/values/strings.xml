@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="welcome">Welcome To Our Movie App</string>
+    <string name="desc">Rick is the cynical and alcoholic scientist from the adult animated series Rick and Morty.</string>
+    <string name="name1">Rick</string>
+    <string name="id1">1</string>
+    <string name="gender">Male</string>
+    <string name="status1">Good</string>
+</resources>
